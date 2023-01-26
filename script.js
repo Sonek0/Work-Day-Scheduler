@@ -18,7 +18,25 @@ $('.saveBtn').on('click', function() {
     }, 5000);
 });
 
+// adding a hour function with regular hours along with a loop if time has been moved
+function hourUpdater() {
+  var currentHour = dayjs().hour();
+  $('time-block').each(function () {
+    var blockHour = parseInt($(this).attr('id').split('-')[1]);
 
+    if(blockHour < currentHour) {
+      $(this).addClass('past');
+    } else if (blockHour === currentHour) {
+      $(this).removeClass('past');
+      $(this).addClass('present');
+    } else {
+      $(this).removeClass('past)')
+      $(this).removeClass('present')
+      $(this).addClass('future')
+    }
+  });
+}
+hourUpdater();
 
 
 });
