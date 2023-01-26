@@ -52,6 +52,6 @@ $("#hour-15 .description").val(localStorage.getItem("hour-15"));
 $("#hour-16 .description").val(localStorage.getItem("hour-16"));
 $("#hour-17 .description").val(localStorage.getItem("hour-17"));
 
-$('#currentDay').text(dayjs("03-14-2023").format("dddd, MMMM D, YYYY"));
+$('#currentDay').text(dayjs("01-25-2023").format("dddd, MMMM D, YYYY"));
 
 });
