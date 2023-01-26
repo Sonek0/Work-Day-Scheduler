@@ -10,11 +10,11 @@ $('.saveBtn').on('click', function() {
   localStorage.setItem(time, value);
 
   //notifiys the item was saved
-  $('.notification').removeclass('show');
+  $('.notification').addClass('show');
 
   //removes 'show' after the time duration
   setTimeout(function () {
-    $('.notfication').removeclass('show');
+    $('.notification').removeclass('show');
     }, 5000);
 });
 
@@ -30,9 +30,9 @@ function hourUpdater() {
       $(this).removeClass('past');
       $(this).addClass('present');
     } else {
-      $(this).removeClass('past)')
-      $(this).removeClass('present')
-      $(this).addClass('future')
+      $(this).removeClass('past)');
+      $(this).removeClass('present');
+      $(this).addClass('future');
     }
   });
 }
